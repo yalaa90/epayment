@@ -70,8 +70,8 @@ const Page = () => {
               <OverviewTotalCustomers
                 difference={16}
                 positive={false}
-                sx={{ height: '100%', width: '140%' }}
-                value="SA0380000000608010167519"
+                sx={{ height: '100%', width: '100%'}}
+                value="SA0380000000608519"
               />
             </Grid>
 

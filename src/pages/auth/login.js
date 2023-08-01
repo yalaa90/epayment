@@ -76,7 +76,7 @@ const Page = (props) => {
         </title>
       </Head>
       <Dialog  open={open}>
-      <DialogTitle>من فضلك ادخل OTP</DialogTitle>
+      <DialogTitle color='#007A70' fontFamily='29LT Zarid Serif'>من فضلك ادخل OTP</DialogTitle>
      
       <List sx={{ p: 3 }} >
         <ListItem disableGutters>
@@ -86,10 +86,11 @@ const Page = (props) => {
           <Button
                   fullWidth
                   size="large"
-                  sx={{ mt: 3 }}
+                  sx={{ mt: 3, backgroundColor:'#50738E'}}
                   type="submit"
                   variant="contained"
                   onClick={formik.handleSubmit}
+                  color='success'
                 >
                   ادخل
                 </Button>
@@ -121,21 +122,24 @@ const Page = (props) => {
               spacing={1}
               sx={{ mb: 3 }}
             >
-              <Typography variant="h4" color="#007A70">
+              <Typography variant="h4" color="#007A70" fontFamily='29LT Zarid Serif'>
                 تسجيل الدخول
               </Typography>
               <Typography
                 color="#007A70"
                 variant="body2"
+                fontFamily='29LT Zarid Serif'
               >
                 لا تملك حساب؟
                 &nbsp;
                 <Link
+                
                 color="#007A70"
                   component={NextLink}
                   href="/auth/register"
                   underline="hover"
                   variant="subtitle2"
+                  fontFamily='29LT Zarid Serif'
                 >
                   انشاء حساب جديد
                 </Link>
@@ -150,6 +154,7 @@ const Page = (props) => {
               color="#007A70"
                 label="بيانات المستخدم"
                 value="email"
+                fontFamily='29LT Zarid Serif'
               />
              
             </Tabs>
@@ -172,6 +177,7 @@ const Page = (props) => {
                     onChange={formik.handleChange}
                     type='text'
                     value={formik.values.email}
+                    fontFamily='29LT Zarid Serif'
                   />
                   <TextField
                   color="success" 
@@ -184,6 +190,7 @@ const Page = (props) => {
                     onChange={formik.handleChange}
                     type="text"
                     value={formik.values.password}
+                    fontFamily='29LT Zarid Serif'
                   />
                 </Stack>
              
@@ -199,7 +206,9 @@ const Page = (props) => {
                 <Button
                   fullWidth
                   size="large"
-                  sx={{ mt: 3 }}
+                  sx={{ mt: 3, backgroundColor:'#50738E'}}
+                   
+                  
                   variant="contained"
                   onClick={()=> {setOpen(true)}}
                 >

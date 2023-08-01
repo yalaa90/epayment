@@ -18,12 +18,13 @@ export const OverviewTotalCustomers = (props) => {
         >
           <Stack >
             <Typography
-              color="text.secondary"
+              color="#007A70"
               variant="overline"
+              fontFamily='29LT Zarid Serif'
             >
               تفاصيل IBAN
             </Typography>
-            <Typography variant="h6">
+            <Typography variant="h6" color="#A69F88">
               {value}
             </Typography>
           </Stack>

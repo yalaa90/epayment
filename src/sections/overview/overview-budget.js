@@ -17,13 +17,14 @@ export const OverviewBudget = (props) => {
           spacing={3}
         >
           <Stack spacing={1}>
-            <Typography
-              color="text.secondary"
+            <Typography 
+              color="#007A70"
               variant="overline"
+              fontFamily='29LT Zarid Serif'
             >
               الرصيد
             </Typography>
-            <Typography variant="h4">
+            <Typography variant="h4" color="#A69F88">
               {value}
             </Typography>
           </Stack>
@@ -65,8 +66,9 @@ export const OverviewBudget = (props) => {
               </Typography>
             </Stack>
             <Typography
-              color="text.secondary"
+              color="#A69F88"
               variant="caption"
+              fontFamily='29LT Zarid Serif'
             >
               منذ اخر شهر
             </Typography>

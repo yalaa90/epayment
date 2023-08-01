@@ -27,6 +27,7 @@ export const SideNav = (props) => {
     <Scrollbar
     
       sx={{
+        color:'#007A70',
         height: '100%',
         '& .simplebar-content': {
           height: '100%'
@@ -40,7 +41,7 @@ export const SideNav = (props) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          height: '100%'
+          height: '100%',
         }}
       >
         <Box sx={{ p: 3 }}>
@@ -75,7 +76,7 @@ export const SideNav = (props) => {
                 Sejel
               </Typography>
               <Typography
-                color="neutral.400"
+                color="#007A70'"
                 variant="body2"
               >
                 Production

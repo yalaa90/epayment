@@ -152,6 +152,7 @@ export const OverviewLatestOrders = (props) => {
                 size="large"
                 sx={{ mt: 3 }}
                 variant="contained"
+                color='success'
                 onClick={() => {
                   if (localStorage.getItem('params')) {
                     const params = localStorage.getItem('params').split('&')
@@ -209,6 +210,7 @@ let Auction_Id
                 size="large"
                 sx={{ mt: 3 }}
                 variant="contained"
+                color='success'
                 onClick={() => {
                   if (params) {
                     let amount = params['amount'];
@@ -229,6 +231,7 @@ let Auction_Id
                 size="large"
                 sx={{ mt: 3 }}
                 variant="contained"
+                color='success'
                 onClick={() => { setCcpayment(true) }}
               >
                 مدى
@@ -240,7 +243,7 @@ let Auction_Id
 
 
       <Card sx={sx} >
-        <CardHeader title="المدفوعات" style={{ textAlign: 'center' }} />
+        <CardHeader title="المدفوعات" style={{ textAlign: 'center' , color:'#007A70',fontFamily:'29LT Zarid Serif'}} />
         <Scrollbar sx={{ flexGrow: 1 }}>
           <Box sx={{ minWidth: 800 }}>
             <Table >
@@ -252,18 +255,18 @@ let Auction_Id
                     <TableRow
                       hover
                       key={order.id}
-
+                      color='#007A70'
                     >
-                      <TableCell align='right'>
+                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'29LT Zarid Serif'}}>
                         {order.ref}
                       </TableCell>
-                      <TableCell align='right'>
+                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'29LT Zarid Serif'}} >
                         {order.customer.name}
                       </TableCell>
-                      <TableCell align='right'>
+                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'29LT Zarid Serif'}}>
                         {order.createdAt}
                       </TableCell>
-                      <TableCell align='right'>
+                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'29LT Zarid Serif'}}>
                         <SeverityPill >
                           {order.status}
                         </SeverityPill>
@@ -280,9 +283,9 @@ let Auction_Id
           alignSelf: "stretch",
         }} >
           <Button
-            color="primary"
             size="large"
             variant="contained"
+            sx={{ mt: 3, backgroundColor:'#50738E'}}
             onClick={() => setOpen(true)}
           >
             ادفع
