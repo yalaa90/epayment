@@ -20,7 +20,7 @@ export const OverviewTotalCustomers = (props) => {
             <Typography
               color="#007A70"
               variant="overline"
-              fontFamily='29LT Zarid Serif'
+              fontFamily='zaraid_serif'
             >
               تفاصيل IBAN
             </Typography>

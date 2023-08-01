@@ -20,7 +20,7 @@ export const OverviewBudget = (props) => {
             <Typography 
               color="#007A70"
               variant="overline"
-              fontFamily='29LT Zarid Serif'
+              fontFamily='zaraid_serif'
             >
               الرصيد
             </Typography>
@@ -68,7 +68,7 @@ export const OverviewBudget = (props) => {
             <Typography
               color="#A69F88"
               variant="caption"
-              fontFamily='29LT Zarid Serif'
+              fontFamily='zaraid_serif'
             >
               منذ اخر شهر
             </Typography>

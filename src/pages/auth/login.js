@@ -76,7 +76,7 @@ const Page = (props) => {
         </title>
       </Head>
       <Dialog  open={open}>
-      <DialogTitle color='#007A70' fontFamily='29LT Zarid Serif'>من فضلك ادخل OTP</DialogTitle>
+      <DialogTitle color='#007A70' fontFamily='zaraid_serif'>من فضلك ادخل OTP</DialogTitle>
      
       <List sx={{ p: 3 }} >
         <ListItem disableGutters>
@@ -122,13 +122,13 @@ const Page = (props) => {
               spacing={1}
               sx={{ mb: 3 }}
             >
-              <Typography variant="h4" color="#007A70" fontFamily='29LT Zarid Serif'>
+              <Typography variant="h4" color="#007A70" fontFamily='zaraid_serif'>
                 تسجيل الدخول
               </Typography>
               <Typography
                 color="#007A70"
                 variant="body2"
-                fontFamily='29LT Zarid Serif'
+                fontFamily='zaraid_serif'
               >
                 لا تملك حساب؟
                 &nbsp;
@@ -139,7 +139,7 @@ const Page = (props) => {
                   href="/auth/register"
                   underline="hover"
                   variant="subtitle2"
-                  fontFamily='29LT Zarid Serif'
+                  fontFamily='zaraid_serif'
                 >
                   انشاء حساب جديد
                 </Link>
@@ -154,7 +154,7 @@ const Page = (props) => {
               color="#007A70"
                 label="بيانات المستخدم"
                 value="email"
-                fontFamily='29LT Zarid Serif'
+                fontFamily='zaraid_serif'
               />
              
             </Tabs>
@@ -177,7 +177,7 @@ const Page = (props) => {
                     onChange={formik.handleChange}
                     type='text'
                     value={formik.values.email}
-                    fontFamily='29LT Zarid Serif'
+                    fontFamily='zaraid_serif'
                   />
                   <TextField
                   color="success" 
@@ -190,7 +190,7 @@ const Page = (props) => {
                     onChange={formik.handleChange}
                     type="text"
                     value={formik.values.password}
-                    fontFamily='29LT Zarid Serif'
+                    fontFamily='zaraid_serif'
                   />
                 </Stack>
              

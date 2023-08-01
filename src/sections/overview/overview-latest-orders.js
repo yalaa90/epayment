@@ -150,9 +150,8 @@ export const OverviewLatestOrders = (props) => {
               <Button
                 fullWidth
                 size="large"
-                sx={{ mt: 3 }}
+                sx={{ mt: 3, backgroundColor:'#50738E'}}
                 variant="contained"
-                color='success'
                 onClick={() => {
                   if (localStorage.getItem('params')) {
                     const params = localStorage.getItem('params').split('&')
@@ -208,9 +207,8 @@ let Auction_Id
               <Button
                 fullWidth
                 size="large"
-                sx={{ mt: 3 }}
                 variant="contained"
-                color='success'
+                sx={{ mt: 3, backgroundColor:'#50738E'}}
                 onClick={() => {
                   if (params) {
                     let amount = params['amount'];
@@ -229,9 +227,8 @@ let Auction_Id
               <Button
                 fullWidth
                 size="large"
-                sx={{ mt: 3 }}
                 variant="contained"
-                color='success'
+                sx={{ mt: 3, backgroundColor:'#50738E'}}
                 onClick={() => { setCcpayment(true) }}
               >
                 مدى
@@ -243,7 +240,7 @@ let Auction_Id
 
 
       <Card sx={sx} >
-        <CardHeader title="المدفوعات" style={{ textAlign: 'center' , color:'#007A70',fontFamily:'29LT Zarid Serif'}} />
+        <CardHeader title="المدفوعات" style={{ textAlign: 'center' , color:'#007A70',fontFamily:'zaraid_serif'}} />
         <Scrollbar sx={{ flexGrow: 1 }}>
           <Box sx={{ minWidth: 800 }}>
             <Table >
@@ -257,16 +254,16 @@ let Auction_Id
                       key={order.id}
                       color='#007A70'
                     >
-                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'29LT Zarid Serif'}}>
+                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'zaraid_serif'}}>
                         {order.ref}
                       </TableCell>
-                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'29LT Zarid Serif'}} >
+                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'zaraid_serif'}} >
                         {order.customer.name}
                       </TableCell>
-                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'29LT Zarid Serif'}}>
+                      <TableCell align='right' style={{ color:'#007A70',fontFamily:'zaraid_serif'}}>
                         {order.createdAt}
                       </TableCell>
-                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'29LT Zarid Serif'}}>
+                      <TableCell align='right' style={{ color:'#A69F88',fontFamily:'zaraid_serif'}}>
                         <SeverityPill >
                           {order.status}
                         </SeverityPill>
